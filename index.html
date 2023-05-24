@@ -20,9 +20,7 @@
           <h1>5 Day Weather Forecast</h1>
         </div>
       </div>
-      <div class="col d-flex justify-content-start">
-        <button class="btn btn-info" id="addFavorites">+ Favorites</button>
-      </div>
+
       <div class="col pt-3 d-flex justify-content-center mt-5">
         <input
           class="form-control-sm"
@@ -39,12 +37,13 @@
     <div class="container mt-5">
       
       <div class="row mt-5">
-        <div class="col d-flex justify-content-center" id="currentCityDisplay">City Name</div>
+        <div class="col d-flex justify-content-center" id="currentCityDisplay"><h5>City Name</h5></div>
       </div>
     
       <div class="row mt-2">
-        <div class="col d-flex justify-content-center" id="currentTemp">
-          Current Temp
+      
+        <div class="col d-flex justify-content-center" id="currentTemp"><h5>Current Temp</h5>
+         
         </div>
       </div>
       <div class="row mt-2">
@@ -53,84 +52,63 @@
         </div>
       </div>
       <div class="row mt-2">
-        <div class="col d-flex justify-content-center" id="currentHigh">
-          High:
-        </div>
+        <div class="col-6 d-flex justify-content-end"><h6>High:</h6></div>
+        <div class="col d-flex justify-content-start" id="currentHigh"><h6>High:</h6></div>
       </div>
       <div class="row mt-2">
-        <div class="col d-flex justify-content-center" id="currentLow">
-          Low:
-        </div>
+        <div class="col-6 d-flex justify-content-end"><h6>Low:</h6></div>
+        <div class="col-6 d-flex justify-content-start" id="currentLow"><h6>Low:</h6></div>
       </div>
       <div class="row mt-2">
-        <div class="col d-flex justify-content-center" id="feelsLike">
-          Feels Like
+        <div class="col-6 d-flex justify-content-end"><h6>Feels Like:</h6></div>
+        <div class="col-6 d-flex justify-content-start" id="feelsLike">
+          <h6>Feels Like</h6>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
       <br />
       <div class="row justify-content-center m-5">
-        <div class="card m-3" style="width: 12rem">
-          <div class="card-header">Day 1</div>
-          <div class="card-body">
-            <ul class="list-group list-group-flush">
-              <li class="m-5">
-                <img id="d1Icon" src="" alt="" />
-              </li>
-              <li id = "d1Desc"class="list-group-item">Description</li>
-              <li id= "d1H" class="list-group-item">H:</li>
-              <li id= "d1L" class="list-group-item">L:</li>
-            </ul>
-          </div>
-        
+        <div class="card mx-3 pb-4" style="width: 12rem">
+          <div class="card-header d-flex justify-content-center">Day 1</div>
+          <img id="d1Icon" src="" alt="" />
+          <div class="col d-flex justify-content-center" id = "d1Temp">Temp</div>
+          <div class="col d-flex justify-content-center" id = "d1Desc">Description</div>
         </div>
-        <div class="card m-3" style="width: 12rem">
-          <div class="card-header" id="d2">Day 2</div>
-          <ul class="list-group list-group-flush">
-            <li class="m-5">
-              <img id="d2Icon" src="" alt="" />
-            </li>
-            <li id= "d2Desc" class="list-group-item">Description</li>
-            <li id= "d2H"class="list-group-item">H:</li>
-            <li id= "d2L"class="list-group-item">L:</li>
-          </ul>
+        <div class="card mx-3 pb-4" style="width: 12rem">
+          <div class="card-header d-flex justify-content-center">Day 2</div> 
+          <img id="d2Icon" src="" alt="" />
+          <div class="col d-flex justify-content-center" id = "d2Temp">Temp</div>
+          <div class="col d-flex justify-content-center" id = "d2Desc">Description</div>
         </div>
-        <div class="card m-3" style="width: 12rem">
-          <div class="card-header" id="d3">Day 3</div>
-          <ul class="list-group list-group-flush">
-            <li class="m-5">
-              <img id="d3Icon" src="" alt="" />
-            </li>
-            <li id= "d3Desc" class="list-group-item">Description</li>
-            <li id= "d3H" class="list-group-item">H:</li>
-            <li id= "d3L" class="list-group-item">L:</li>
-          </ul>
+        <div class="card mx-3 pb-4" style="width: 12rem">
+          <div class="card-header d-flex justify-content-center">Day 3</div>
+          <img id="d3Icon" src="" alt="" />
+          <div class="col d-flex justify-content-center" id = "d3Temp">Temp</div>
+          <div class="col d-flex justify-content-center" id = "d3Desc">Description</div>
         </div>
-        <div class="card m-3" style="width: 12rem">
-          <div class="card-header" id="d4">Day 4</div>
-          <ul class="list-group list-group-flush">
-            <li class="m-5">
-              <img id="d4Icon" src="" alt="" />
-            </li>
-            <li id= "d4Desc" class="list-group-item">Description</li>
-            <li id= "d4H" class="list-group-item">H:</li>
-            <li id= "d4L" class="list-group-item">L:</li>
-          </ul>
+        <div class="card mx-3 pb-4" style="width: 12rem">
+          <div class="card-header d-flex justify-content-center">Day 4</div>
+          <img id="d4Icon" src="" alt="" />
+          <div class="col d-flex justify-content-center" id = "d4Temp">Temp</div>
+          <div class="col d-flex justify-content-center" id = "d4Desc">Description</div>
+  
         </div>
-        <div class="card m-3" style="width: 12rem">
-          <div class="card-header" id="d5">Day 5</div>
-          <ul class="list-group list-group-flush">
-            <li class="m-5">
-              <img id="d5Icon" src="" alt="" />
-            </li>
-            <li id= "d5Desc" class="list-group-item">Description</li>
-            <li id= "d5H"class="list-group-item">H:</li>
-            <li id= "d5L"class="list-group-item">L:</li>
-          </ul>
+        <div class="card mx-3 pb-4" style="width: 12rem">
+          <div class="card-header d-flex justify-content-center">Day 5</div>
+          <img id="d5Icon" src="" alt="" />
+          <div class="col d-flex justify-content-center" id = "d5Temp">Temp</div>
+          <div class="col d-flex justify-content-center" id = "d5Desc">Description</div>
         </div>
       </div>
+      <div class="col d-flex justify-content-start">
+        <button class="btn btn-warning m-5" id="addFavorites"> + Favorites</button>
+        <button class="btn btn-warning m-5" id="delFavorites"> - Delete</button>
+
+      </div>
+      <div class="row">
+        <div id="inject"></div>
+      </div>
+  
+      
     </div>
 
     <script
