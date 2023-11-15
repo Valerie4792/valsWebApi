@@ -252,6 +252,10 @@ function BgDescription(weatherData) {
     else if (description.includes('mist')){
         document.body.style.backgroundImage = "url('../images/bgImages/mist.jpg')";
     }
+    else if (description.includes('overcast clouds')){
+        document.body.style.backgroundImage = "url('../images/bgImages/fewClouds.jpg')";
+    }
+    
    
     
     else {
