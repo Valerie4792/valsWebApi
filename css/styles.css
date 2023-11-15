@@ -1,6 +1,8 @@
 body{
     background-color: black;
     background-image: url(/images/searchCity.jpg);
+    background-repeat: none;
+    background-size: cover;
 
 }
 *{
